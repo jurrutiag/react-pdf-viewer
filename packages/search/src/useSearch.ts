@@ -153,10 +153,6 @@ export const useSearch = (
         if (jumpToPage) {
             jumpToPage(match.pageIndex);
         }
-        store.update('matchPosition', {
-            matchIndex: match.matchIndex,
-            pageIndex: match.pageIndex,
-        });
         return match;
     };
 
