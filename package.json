@@ -30,7 +30,8 @@
         "test:e2e": "jest --no-cache --runInBand --config jest-e2e.config.js",
         "lint": "eslint packages/**/src/*.ts packages/**/src/*.tsx",
         "format": "prettier --write \"**/*.+(css|js|json|jsx|less|md|ts|tsx)\"",
-        "release": "npm run build && lerna publish from-package"
+        "release": "npm run build && lerna publish from-package",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@rollup/plugin-json": "^6.0.0",
@@ -54,14 +55,16 @@
         "jest-puppeteer": "^8.0.5",
         "lerna": "^6.5.1",
         "path2d-polyfill": "^2.0.1",
-        "pdfjs-dist": "^3.4.120",
         "prettier": "^2.8.4",
         "puppeteer": "^19.7.4",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
         "rollup": "^3.19.1",
         "sass": "^1.59.2",
         "ts-jest": "^29.0.5",
         "typescript": "^4.9.5"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "pdfjs-dist": "^3.11.174"
     }
 }

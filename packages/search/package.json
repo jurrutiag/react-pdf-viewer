@@ -16,11 +16,6 @@
         "pdf.js",
         "pdf viewer"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/react-pdf-viewer/react-pdf-viewer",
-        "directory": "packages/search"
-    },
     "bugs": {
         "url": "https://github.com/react-pdf-viewer/react-pdf-viewer/issues"
     },
